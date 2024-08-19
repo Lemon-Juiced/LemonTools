@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " H ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "lemon_tools:diamond_blade"
+    },
+    "H": {
+      "item": "lemon_tools:golden_hilt"
+    },
+    "S": {
+      "item": "lemon_tools:wooden_tool_rod"
+    }
+  },
+  "result": {
+    "id": "lemon_tools:diamond_golden_wooden_sword"
+  }
+}

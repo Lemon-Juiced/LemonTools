@@ -1,0 +1,46 @@
+{
+  "itemGroup.lemon_tools_templates": "Lemon Tools: Templates",
+  "itemGroup.lemon_tools_parts": "Lemon Tools: Parts",
+  "itemGroup.lemon_tools_swords": "Lemon Tools: Swords",
+
+  "item.lemon_tools.blueprint": "Blueprint",
+  "item.lemon_tools.blade_template": "Blade Template",
+  "item.lemon_tools.hilt_template": "Hilt Template",
+  "item.lemon_tools.tool_rod_long_template": "Tool Rod (Long) Template",
+  "item.lemon_tools.tool_rod_short_template": "Tool Rod (Short) Template",
+
+  "item.lemon_tools.wooden_blade": "Wooden Blade",
+  "item.lemon_tools.stone_blade": "Stone Blade",
+  "item.lemon_tools.iron_blade": "Iron Blade",
+  "item.lemon_tools.golden_blade": "Golden Blade",
+  "item.lemon_tools.diamond_blade": "Diamond Blade",
+  "item.lemon_tools.netherite_blade": "Netherite Blade",
+
+  "item.lemon_tools.wooden_hilt": "Wooden Hilt",
+  "item.lemon_tools.stone_hilt": "Stone Hilt",
+  "item.lemon_tools.iron_hilt": "Iron Hilt",
+  "item.lemon_tools.golden_hilt": "Golden Hilt",
+  "item.lemon_tools.diamond_hilt": "Diamond Hilt",
+  "item.lemon_tools.netherite_hilt": "Netherite Hilt",
+
+  "item.lemon_tools.bamboo_tool_rod_short": "Bamboo Tool Rod (Short)",
+  "item.lemon_tools.blaze_tool_rod_short": "Blaze Tool Rod (Short)",
+  "item.lemon_tools.bone_tool_rod_short": "Bone Tool Rod (Short)",
+  "item.lemon_tools.end_tool_rod_short": "End Tool Rod (Short)",
+  "item.lemon_tools.wooden_tool_rod_short": "Wooden Tool Rod (Short)",
+
+  "tooltip.lemon_tools.blade_type": "Blade Type: ",
+  "tooltip.lemon_tools.hilt_type": "Hilt Type: ",
+  "tooltip.lemon_tools.tool_rod_type": "Tool Rod Type: ",
+
+  "tooltip.lemon_tools.bamboo": "Bamboo",
+  "tooltip.lemon_tools.blaze": "Blaze",
+  "tooltip.lemon_tools.bone": "Bone",
+  "tooltip.lemon_tools.diamond": "Diamond",
+  "tooltip.lemon_tools.end": "End",
+  "tooltip.lemon_tools.golden": "Golden",
+  "tooltip.lemon_tools.iron": "Iron",
+  "tooltip.lemon_tools.netherite": "Netherite",
+  "tooltip.lemon_tools.stone": "Stone",
+  "tooltip.lemon_tools.wooden": "Wooden"
+}

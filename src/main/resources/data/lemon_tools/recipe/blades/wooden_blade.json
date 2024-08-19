@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lemon_tools:blade_template"
+    },
+    {
+      "tag": "minecraft:planks"
+    },
+    {
+      "tag": "minecraft:planks"
+    }
+  ],
+  "result": {
+    "id": "lemon_tools:wooden_blade"
+  }
+}

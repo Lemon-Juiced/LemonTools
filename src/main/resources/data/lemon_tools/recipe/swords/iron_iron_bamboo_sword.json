@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " H ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "lemon_tools:iron_blade"
+    },
+    "H": {
+      "item": "lemon_tools:iron_hilt"
+    },
+    "S": {
+      "item": "lemon_tools:bamboo_tool_rod"
+    }
+  },
+  "result": {
+    "id": "lemon_tools:iron_iron_bamboo_sword"
+  }
+}

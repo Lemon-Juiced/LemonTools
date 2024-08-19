@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lemon_tools:blade_template"
+    },
+    {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    {
+      "tag": "minecraft:stone_tool_materials"
+    }
+  ],
+  "result": {
+    "id": "lemon_tools:stone_blade"
+  }
+}

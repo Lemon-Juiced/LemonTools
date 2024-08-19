@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lemon_tools:blade_template"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "id": "lemon_tools:netherite_blade"
+  }
+}

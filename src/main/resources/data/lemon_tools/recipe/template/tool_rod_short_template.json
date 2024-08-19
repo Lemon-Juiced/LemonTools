@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "/"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "lemon_tools:blueprint"
+    }
+  },
+  "result": {
+    "id": "lemon_tools:tool_rod_short_template",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lemon_tools:tool_rod_short_template"
+    },
+    {
+      "item": "minecraft:bamboo"
+    }
+  ],
+  "result": {
+    "id": "lemon_tools:bamboo_tool_rod_short"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lemon_tools:hilt_template"
+    },
+    {
+
+    }
+  ],
+  "result": {
+    "id": "lemon_tools:gold_hilt"
+  }
+}

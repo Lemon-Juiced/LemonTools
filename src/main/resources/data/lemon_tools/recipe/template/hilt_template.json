@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#B#"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "B": {
+      "item": "lemon_tools:blueprint"
+    }
+  },
+  "result": {
+    "id": "lemon_tools:hilt_template",
+    "count": 1
+  }
+}
