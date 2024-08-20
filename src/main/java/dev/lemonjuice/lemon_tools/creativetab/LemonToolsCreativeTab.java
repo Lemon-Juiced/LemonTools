@@ -58,6 +58,7 @@ public class LemonToolsCreativeTab {
             .title(Component.translatable("itemGroup.lemon_tools_swords"))
             .icon(() -> Items.NETHERITE_SWORD.getDefaultInstance())
             .displayItems((parameters, output) -> {
+                output.accept(LemonToolsItems.NETHERITE_NETHERITE_WOODEN_SWORD.get());
                 // Sword Items
                 /*
                 for (int i = 0; i < LemonToolsItems.SWORD_ITEMS.size(); i++) {
