@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 public class LemonToolsItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LemonTools.MOD_ID);
-    public static final DeferredRegister.Items SWORD_ITEMS = DeferredRegister.createItems(LemonTools.MOD_ID);
 
     // Templates
     public static final DeferredItem<Item> BLUEPRINT = ITEMS.register("blueprint", () -> new Item(new Item.Properties()));
@@ -53,65 +52,13 @@ public class LemonToolsItems {
     public static final DeferredItem<Item> WOODEN_TOOL_ROD_SHORT = ITEMS.register("wooden_tool_rod_short", () -> new Item(new Item.Properties()));
 
     // Swords
-    public static final DeferredItem<Item> NETHERITE_NETHERITE_WOODEN_SWORD = ITEMS.register("netherite_netherite_wooden_sword", () -> new LTSwordItem(Tiers.NETHERITE, (new Item.Properties()).attributes(SwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)), "netherite", "netherite", "wooden"));
+    //public static final DeferredItem<Item> NETHERITE_NETHERITE_WOODEN_SWORD = ITEMS.register("netherite_netherite_wooden_sword", () -> new LTSwordItem(Tiers.NETHERITE, (new Item.Properties()).attributes(SwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)), "netherite", "netherite", "wooden"));
 
     public static void register(IEventBus eventBus) {
+        // Create all sword items
+        SwordItemFactory.createSwordItems();
+
         ITEMS.register(eventBus);
-        SWORD_ITEMS.register(eventBus);
     }
 
-    // ^ NICE CODE ENDS HERE ^
-    // v BAD CODE STARTS HERE v
-
-    /**
-     * Creates all sword items and registers them.
-     *
-     * @return The sword items in a DeferredRegister.
-     */
-    public static void createSwordItems() {
-        for (int i = 0; i < ListUtil.bladeMaterials.size(); i++) {
-            for (int j = 0; j < ListUtil.hiltMaterials.size(); j++) {
-                for (int k = 0; k < ListUtil.toolRodMaterials.size(); k++) {
-                    LTSwordItem swordItem = createSwordItem(ListUtil.bladeMaterials.get(i), ListUtil.hiltMaterials.get(j), ListUtil.toolRodMaterials.get(k));
-                    SWORD_ITEMS.register(swordItem.getSwordName(), () -> swordItem);
-                }
-            }
-        }
-    }
-
-    /**
-     * Creates sword items based on the materials.
-     *
-     * @param bladeMaterial The material of the blade.
-     * @param hiltMaterial The material of the hilt.
-     * @param toolRodMaterial The material of the handle.
-     * @return The sword items.
-     */
-    public static LTSwordItem createSwordItem(String bladeMaterial, String hiltMaterial, String toolRodMaterial) {
-        Tier tier = getTier(bladeMaterial);
-        return new LTSwordItem(tier, (new Item.Properties()).attributes(SwordItem.createAttributes(tier, 3, -2.4F)), bladeMaterial, hiltMaterial, toolRodMaterial);
-    }
-
-    /**
-     * Gets the tier of the sword based on the material.
-     *
-     * @param material The material of the sword.
-     * @return The tier of the sword.
-     */
-    public static Tier getTier(String material) {
-        switch (material) {
-            case "stone":
-                return Tiers.STONE;
-            case "iron":
-                return Tiers.IRON;
-            case "golden":
-                return Tiers.GOLD;
-            case "diamond":
-                return Tiers.DIAMOND;
-            case "netherite":
-                return Tiers.NETHERITE;
-            default:
-                return Tiers.WOOD;
-        }
-    }
 }

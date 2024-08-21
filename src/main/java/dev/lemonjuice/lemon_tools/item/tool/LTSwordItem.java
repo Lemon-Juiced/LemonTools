@@ -39,7 +39,4 @@ public class LTSwordItem extends SwordItem {
         return toolRodMaterial;
     }
 
-    public String getSwordName() {
-        return bladeMaterial + "_" + hiltMaterial + "_" + toolRodMaterial + "_sword";
-    }
 }

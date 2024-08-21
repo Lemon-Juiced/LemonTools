@@ -15,25 +15,25 @@ public class JSONGenerator {
         for (int i = 0; i < bladeMaterials.size(); i++) {
             for (int j = 0; j < hiltMaterials.size(); j++) {
                 for (int k = 0; k < toolRodMaterials.size(); k++) {
-                    generateSwordModel(bladeMaterials.get(i), hiltMaterials.get(j), toolRodMaterials.get(k));
-                    generateSwordRecipe(bladeMaterials.get(i), hiltMaterials.get(j), toolRodMaterials.get(k));
+                    generateSwordModel(bladeMaterials.get(i).name(), hiltMaterials.get(j).name(), toolRodMaterials.get(k).name());
+                    generateSwordRecipe(bladeMaterials.get(i).name(), hiltMaterials.get(j).name(), toolRodMaterials.get(k).name());
                 }
             }
         }
 
         // Generate Blades
         for (int i = 0; i < bladeMaterials.size(); i++) {
-            generateBladeRecipe(bladeMaterials.get(i));
+            generateBladeRecipe(bladeMaterials.get(i).name());
         }
 
         // Generate Hilts
         for (int i = 0; i < hiltMaterials.size(); i++) {
-            generateHiltRecipe(hiltMaterials.get(i));
+            generateHiltRecipe(hiltMaterials.get(i).name());
         }
 
         // Generate Tool Rod (Short)
         for (int i = 0; i < toolRodMaterials.size(); i++) {
-            generateToolRodShortRecipe(toolRodMaterials.get(i));
+            generateToolRodShortRecipe(toolRodMaterials.get(i).name());
         }
     }
 }

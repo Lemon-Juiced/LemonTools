@@ -1,6 +1,7 @@
 package dev.lemonjuice.lemon_tools.creativetab;
 
 import dev.lemonjuice.lemon_tools.item.LemonToolsItems;
+import dev.lemonjuice.lemon_tools.item.tool.LTSwordItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -10,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import static dev.lemonjuice.lemon_tools.LemonTools.MOD_ID;
+import static dev.lemonjuice.lemon_tools.item.LemonToolsItems.ITEMS;
 
 public class LemonToolsCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
@@ -58,14 +60,11 @@ public class LemonToolsCreativeTab {
             .title(Component.translatable("itemGroup.lemon_tools_swords"))
             .icon(() -> Items.NETHERITE_SWORD.getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(LemonToolsItems.NETHERITE_NETHERITE_WOODEN_SWORD.get());
                 // Sword Items
-                /*
-                for (int i = 0; i < LemonToolsItems.SWORD_ITEMS.size(); i++) {
-                    output.accept(LemonToolsItems.SWORD_ITEMS.get(i));
-                }
-                */
-
+                ITEMS.getEntries().stream()
+                        .map(item -> item.get())
+                        .filter(item -> item instanceof LTSwordItem)
+                        .forEach(item -> output.accept(item));
             }).build());
 
     public static void register(IEventBus eventBus) {
