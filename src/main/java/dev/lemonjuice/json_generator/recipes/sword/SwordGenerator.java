@@ -105,7 +105,7 @@ public class SwordGenerator {
             writer.write("      \"item\": \"lemon_tools:" + hiltMaterial + "_hilt\"\n");
             writer.write("    },\n");
             writer.write("    \"S\": {\n");
-            writer.write("      \"item\": \"lemon_tools:" + toolRodMaterial + "_tool_rod\"\n");
+            writer.write("      \"item\": \"lemon_tools:" + toolRodMaterial + "_tool_rod_short\"\n");
             writer.write("    }\n");
             writer.write("  },\n");
             writer.write("  \"result\": {\n");

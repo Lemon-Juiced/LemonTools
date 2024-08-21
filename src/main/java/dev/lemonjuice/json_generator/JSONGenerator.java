@@ -1,5 +1,7 @@
 package dev.lemonjuice.json_generator;
 
+import java.util.ArrayList;
+
 import static dev.lemonjuice.json_generator.models.ModelGenerator.generateSwordModel;
 import static dev.lemonjuice.json_generator.recipes.parts.ToolPartGenerator.generateToolRodShortRecipe;
 import static dev.lemonjuice.json_generator.recipes.sword.SwordGenerator.*;
@@ -12,28 +14,32 @@ public class JSONGenerator {
 
     public static void main(String[] args) {
         // Generate Swords
+        ArrayList<String> bladeMaterials = getBladeMaterials();
+        ArrayList<String> hiltMaterials = getHiltMaterials();
+        ArrayList<String> toolRodMaterials = getToolRodMaterials();
+
         for (int i = 0; i < bladeMaterials.size(); i++) {
             for (int j = 0; j < hiltMaterials.size(); j++) {
                 for (int k = 0; k < toolRodMaterials.size(); k++) {
-                    generateSwordModel(bladeMaterials.get(i).name(), hiltMaterials.get(j).name(), toolRodMaterials.get(k).name());
-                    generateSwordRecipe(bladeMaterials.get(i).name(), hiltMaterials.get(j).name(), toolRodMaterials.get(k).name());
+                    generateSwordModel(bladeMaterials.get(i), hiltMaterials.get(j), toolRodMaterials.get(k));
+                    generateSwordRecipe(bladeMaterials.get(i), hiltMaterials.get(j), toolRodMaterials.get(k));
                 }
             }
         }
 
         // Generate Blades
         for (int i = 0; i < bladeMaterials.size(); i++) {
-            generateBladeRecipe(bladeMaterials.get(i).name());
+            generateBladeRecipe(bladeMaterials.get(i));
         }
 
         // Generate Hilts
         for (int i = 0; i < hiltMaterials.size(); i++) {
-            generateHiltRecipe(hiltMaterials.get(i).name());
+            generateHiltRecipe(hiltMaterials.get(i));
         }
 
         // Generate Tool Rod (Short)
         for (int i = 0; i < toolRodMaterials.size(); i++) {
-            generateToolRodShortRecipe(toolRodMaterials.get(i).name());
+            generateToolRodShortRecipe(toolRodMaterials.get(i));
         }
     }
 }
