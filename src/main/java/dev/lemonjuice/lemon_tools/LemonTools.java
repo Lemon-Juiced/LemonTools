@@ -21,7 +21,9 @@ public class LemonTools {
     public LemonTools(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-        LemonToolsItems.ITEMS.register(modEventBus);
+        NeoForge.EVENT_BUS.register(this);
+
+        LemonToolsItems.register(modEventBus);
         //BLOCKS.register(modEventBus);
         LemonToolsCreativeTab.CREATIVE_MODE_TABS.register(modEventBus);
 

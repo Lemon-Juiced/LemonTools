@@ -13,14 +13,10 @@ import static dev.lemonjuice.lemon_tools.item.LemonToolsItems.ITEMS;
  */
 public class SwordItemFactory {
 
-    public SwordItemFactory() {
-        createSwordItems();
-    }
-
     /**
      * Creates all sword items and registers them.
      */
-    public void createSwordItems() {
+    public static void createSwordItems() {
         for (int i = 0; i < ListUtil.bladeMaterials.size(); i++) {
             for (int j = 0; j < ListUtil.hiltMaterials.size(); j++) {
                 for (int k = 0; k < ListUtil.toolRodMaterials.size(); k++) {
@@ -37,7 +33,7 @@ public class SwordItemFactory {
      * @param hiltMaterial The material of the hilt.
      * @param toolRodMaterial The material of the handle.
      */
-    public void createSwordItem(ResourceUtil.headResource bladeMaterial, ResourceUtil.bindResource hiltMaterial, ResourceUtil.rodResource toolRodMaterial) {
+    public static void createSwordItem(ResourceUtil.headResource bladeMaterial, ResourceUtil.bindResource hiltMaterial, ResourceUtil.rodResource toolRodMaterial) {
         Tier tier = TierFactory.createSwordTier(bladeMaterial, hiltMaterial, toolRodMaterial);
         String swordName = swordNameBuilder(bladeMaterial, hiltMaterial, toolRodMaterial);
         ITEMS.register(swordName, () -> new LTSwordItem(tier, (new Item.Properties()).attributes(LTSwordItem.createAttributes(tier, 3, -2.4F)), bladeMaterial.name(), hiltMaterial.name(), toolRodMaterial.name()));
@@ -51,7 +47,7 @@ public class SwordItemFactory {
      * @param toolRodMaterial The material of the handle.
      * @return The name of the sword.
      */
-    public String swordNameBuilder(ResourceUtil.headResource bladeMaterial, ResourceUtil.bindResource hiltMaterial, ResourceUtil.rodResource toolRodMaterial){
-        return bladeMaterial + "_" + hiltMaterial + "_" + toolRodMaterial + "_sword";
+    public static String swordNameBuilder(ResourceUtil.headResource bladeMaterial, ResourceUtil.bindResource hiltMaterial, ResourceUtil.rodResource toolRodMaterial){
+        return bladeMaterial.name() + "_" + hiltMaterial.name() + "_" + toolRodMaterial.name() + "_sword";
     }
 }

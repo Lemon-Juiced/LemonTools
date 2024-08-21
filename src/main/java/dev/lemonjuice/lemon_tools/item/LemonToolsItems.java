@@ -1,6 +1,7 @@
 package dev.lemonjuice.lemon_tools.item;
 
 import dev.lemonjuice.lemon_tools.LemonTools;
+import dev.lemonjuice.lemon_tools.item.factory.SwordItemFactory;
 import dev.lemonjuice.lemon_tools.item.template.TemplateItem;
 import dev.lemonjuice.lemon_tools.item.tool.LTSwordItem;
 import net.minecraft.world.item.Item;
@@ -49,9 +50,7 @@ public class LemonToolsItems {
     //public static final DeferredItem<Item> NETHERITE_NETHERITE_WOODEN_SWORD = ITEMS.register("netherite_netherite_wooden_sword", () -> new LTSwordItem(Tiers.NETHERITE, (new Item.Properties()).attributes(SwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)), "netherite", "netherite", "wooden"));
 
     public static void register(IEventBus eventBus) {
-        //SwordItemFactory swordItemFactory = new SwordItemFactory();
-        //swordItemFactory.createSwordItems();
-        ITEMS.register("netherite_netherite_wooden_sword", () -> new LTSwordItem(Tiers.NETHERITE, (new Item.Properties()).attributes(LTSwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)), "netherite", "netherite", "wooden"));
+        SwordItemFactory.createSwordItems();
 
         ITEMS.register(eventBus);
     }
