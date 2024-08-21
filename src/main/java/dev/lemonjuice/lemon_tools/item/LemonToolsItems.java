@@ -1,19 +1,13 @@
 package dev.lemonjuice.lemon_tools.item;
 
 import dev.lemonjuice.lemon_tools.LemonTools;
-import dev.lemonjuice.lemon_tools.item.factory.SwordItemFactory;
 import dev.lemonjuice.lemon_tools.item.template.TemplateItem;
 import dev.lemonjuice.lemon_tools.item.tool.LTSwordItem;
-import dev.lemonjuice.lemon_tools.util.ListUtil;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.ArrayList;
 
 public class LemonToolsItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(LemonTools.MOD_ID);
@@ -55,8 +49,9 @@ public class LemonToolsItems {
     //public static final DeferredItem<Item> NETHERITE_NETHERITE_WOODEN_SWORD = ITEMS.register("netherite_netherite_wooden_sword", () -> new LTSwordItem(Tiers.NETHERITE, (new Item.Properties()).attributes(SwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)), "netherite", "netherite", "wooden"));
 
     public static void register(IEventBus eventBus) {
-        // Create all sword items
-        SwordItemFactory.createSwordItems();
+        //SwordItemFactory swordItemFactory = new SwordItemFactory();
+        //swordItemFactory.createSwordItems();
+        ITEMS.register("netherite_netherite_wooden_sword", () -> new LTSwordItem(Tiers.NETHERITE, (new Item.Properties()).attributes(LTSwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)), "netherite", "netherite", "wooden"));
 
         ITEMS.register(eventBus);
     }

@@ -27,16 +27,4 @@ public class LTSwordItem extends SwordItem {
         tooltipComponents.add(Component.translatable("tooltip.lemon_tools.tool_rod_type").append(Component.translatable("tooltip.lemon_tools." + toolRodMaterial)));
     }
 
-    public String getBladeMaterial() {
-        return bladeMaterial;
-    }
-
-    public String getHiltMaterial() {
-        return hiltMaterial;
-    }
-
-    public String getToolRodMaterial() {
-        return toolRodMaterial;
-    }
-
 }
