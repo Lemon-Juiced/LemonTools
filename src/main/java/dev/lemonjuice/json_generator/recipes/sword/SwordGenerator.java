@@ -93,9 +93,9 @@ public class SwordGenerator {
             writer.write("{\n");
             writer.write("  \"type\": \"minecraft:crafting_shaped\",\n");
             writer.write("  \"pattern\": [\n");
-            writer.write("    \" B \",\n");
-            writer.write("    \" H \",\n");
-            writer.write("    \" S \"\n");
+            writer.write("    \"B\",\n");
+            writer.write("    \"H\",\n");
+            writer.write("    \"S\"\n");
             writer.write("  ],\n");
             writer.write("  \"key\": {\n");
             writer.write("    \"B\": {\n");
