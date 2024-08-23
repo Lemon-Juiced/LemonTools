@@ -34,7 +34,7 @@ public class SwordGenerator {
             writer.write("    }\n");
             writer.write("  ],\n");
             writer.write("  \"result\": {\n");
-            writer.write("    \"id\": \"lemon_tools:" + material + "_blade\"\n");
+            writer.write("    \"item\": \"lemon_tools:" + material + "_blade\"\n");
             writer.write("  }\n");
             writer.write("}\n");
 
@@ -68,7 +68,7 @@ public class SwordGenerator {
             writer.write("    }\n");
             writer.write("  ],\n");
             writer.write("  \"result\": {\n");
-            writer.write("    \"id\": \"lemon_tools:" + material + "_hilt\"\n");
+            writer.write("    \"item\": \"lemon_tools:" + material + "_hilt\"\n");
             writer.write("  }\n");
             writer.write("}\n");
 
@@ -109,7 +109,7 @@ public class SwordGenerator {
             writer.write("    }\n");
             writer.write("  },\n");
             writer.write("  \"result\": {\n");
-            writer.write("    \"id\": \"lemon_tools:" + bladeMaterial + "_" + hiltMaterial + "_" + toolRodMaterial + "_sword\"\n");
+            writer.write("    \"item\": \"lemon_tools:" + bladeMaterial + "_" + hiltMaterial + "_" + toolRodMaterial + "_sword\"\n");
             writer.write("  }\n");
             writer.write("}\n");
 

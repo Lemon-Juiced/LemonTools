@@ -14,9 +14,9 @@ public class JSONGenerator {
 
     public static void main(String[] args) {
         // Generate Swords
-        ArrayList<String> bladeMaterials = getBladeMaterials();
-        ArrayList<String> hiltMaterials = getHiltMaterials();
-        ArrayList<String> toolRodMaterials = getToolRodMaterials();
+        ArrayList<String> bladeMaterials = getBladeMaterialNames();
+        ArrayList<String> hiltMaterials = getHiltMaterialNames();
+        ArrayList<String> toolRodMaterials = getToolRodMaterialNames();
 
         for (int i = 0; i < bladeMaterials.size(); i++) {
             for (int j = 0; j < hiltMaterials.size(); j++) {

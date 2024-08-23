@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " B ",
-    " H ",
-    " S "
+    "B",
+    "H",
+    "S"
   ],
   "key": {
     "B": {
@@ -13,10 +13,10 @@
       "item": "lemon_tools:golden_hilt"
     },
     "S": {
-      "item": "lemon_tools:bone_tool_rod"
+      "item": "lemon_tools:bone_tool_rod_short"
     }
   },
   "result": {
-    "id": "lemon_tools:netherite_golden_bone_sword"
+    "item": "lemon_tools:netherite_golden_bone_sword"
   }
 }

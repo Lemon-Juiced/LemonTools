@@ -2,13 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "lemon_tools:hilt_template"
+      "item": "lemon_tools:blade_template"
+    },
+    {
+
     },
     {
 
     }
   ],
   "result": {
-    "id": "lemon_tools:gold_hilt"
+    "id": "lemon_tools:wood_blade"
   }
 }

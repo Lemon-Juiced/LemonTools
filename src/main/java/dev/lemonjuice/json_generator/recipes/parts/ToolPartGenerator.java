@@ -31,7 +31,7 @@ public class ToolPartGenerator {
             writer.write("    }\n");
             writer.write("  ],\n");
             writer.write("  \"result\": {\n");
-            writer.write("    \"id\": \"lemon_tools:" + material + "_tool_rod_short\"\n");
+            writer.write("    \"item\": \"lemon_tools:" + material + "_tool_rod_short\"\n");
             writer.write("  }\n");
             writer.write("}\n");
 
