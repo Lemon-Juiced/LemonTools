@@ -46,9 +46,6 @@ public class LemonToolsItems {
     // Maybe we can add Lightning Rods?
     public static final DeferredItem<Item> WOODEN_TOOL_ROD_SHORT = ITEMS.register("wooden_tool_rod_short", () -> new Item(new Item.Properties()));
 
-    // Swords
-    //public static final DeferredItem<Item> NETHERITE_NETHERITE_WOODEN_SWORD = ITEMS.register("netherite_netherite_wooden_sword", () -> new LTSwordItem(Tiers.NETHERITE, (new Item.Properties()).attributes(SwordItem.createAttributes(Tiers.NETHERITE, 3, -2.4F)), "netherite", "netherite", "wooden"));
-
     public static void register(IEventBus eventBus) {
         SwordItemFactory.createSwordItems();
 
