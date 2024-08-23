@@ -30,6 +30,7 @@
   "item.lemon_tools.wooden_tool_rod_short": "Wooden Tool Rod (Short)",
 
   "item.lemon_tools.netherite_netherite_wooden_sword": "Netherite Netherite Wooden Sword",
+  "item.lemon_tools.sword": "%1$s Sword",
 
   "tooltip.lemon_tools.blade_type": "Blade Type: ",
   "tooltip.lemon_tools.hilt_type": "Hilt Type: ",

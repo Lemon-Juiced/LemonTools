@@ -27,4 +27,9 @@ public class LTSwordItem extends SwordItem {
         tooltipComponents.add(Component.translatable("tooltip.lemon_tools.tool_rod_type").append(Component.translatable("tooltip.lemon_tools." + toolRodMaterial)));
     }
 
+    @Override
+    public Component getName(ItemStack stack) {
+        return Component.translatable("item.lemon_tools.sword",
+                Component.translatable("tooltip.lemon_tools." + bladeMaterial));
+    }
 }
